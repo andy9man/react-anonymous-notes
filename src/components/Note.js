@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
 import { epochDateTimeFix as dateFix } from './helper';
 import { editNote } from '../store/actions';
@@ -29,7 +28,7 @@ class Note extends Component {
 
                     </div>
                     <div className="small-6 medium-2 columns text-center">
-                        <div className="padding-small text-white bg-primary" style={ {borderRadius: '50%', height: 80, width: 80} }>
+                        <div className="padding-small text-white bg-info" style={ {borderRadius: '50%', height: 80, width: 80} }>
                             <p style={ {fontWeight: 800, textTransform: 'uppercase', marginTop: 5} }>Votes</p>
                             <p style={ {fontSize: '2em', fontWeight: 100, lineHeight: 0.1} }>{note.votes}</p>
                         </div>
@@ -43,7 +42,7 @@ class Note extends Component {
                                 this.setState({votes: note.votes+1});
                             }}
                         >
-                            &#43;
+                            <span className="icon-ill-feedback" />
                         </div>
                     </div>
                 </div>

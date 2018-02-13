@@ -19,7 +19,7 @@ class AddNote extends Component {
                     (e) => {
                         e.preventDefault();
                         //Send the note to the API/Redux
-                        this.props.addNote({body: this.state.newNote});
+                        this.props.addNote({body: this.state.newNote, votes: 0});
                         this.setState({newNote: ''});
                     }}>
                     <div className="row">

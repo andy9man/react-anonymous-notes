@@ -53,7 +53,6 @@ export const getNotes = () => {
 export const editNote = (id, obj) => {
   return (dispatch, getState, url) => {
     console.log(`Updating Data... ${id}`);
-    console.log(obj);
     axios.put(`${url}/${id}`, obj)
       .then( (response) => {
         dispatch( getNotes() );
