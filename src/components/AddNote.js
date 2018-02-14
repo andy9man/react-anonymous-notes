@@ -36,7 +36,7 @@ class AddNote extends Component {
                                     )}
                                     required
                                 />
-                                <label htmlFor="newNote">Note</label>
+                                <label htmlFor="newNote">Add Note</label>
                                 {this.props.error && <small className="error">There was an issue finding that GitHub user.</small>}
                             </div>
                         </div>
