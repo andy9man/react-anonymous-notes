@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
 
         <div className="padding-vert-large padding-horiz-large margin-vert-xlarge margin-horiz-xlarge card bg-off-white">
-          <header className="margin-bottom-large">
+          <header>
             <h1>Anonymous Notes</h1>
           </header>
 

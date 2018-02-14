@@ -4,3 +4,19 @@
   display: flex;
   flex-flow: column;
 }
+
+.superModal {
+  width: 80vw;
+  margin: 25% auto;
+
+  background-color: #fff;
+}
+
+.superOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(206, 208, 206, 0.8);
+}
